@@ -64,7 +64,7 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @ColumnInfo(name = "FooterL5")
     @TLVOptions(paddingLength = 40)
     private String FooterL5; //	40	ASC	Receipt Footer Line 5
-    @SerializedName("passwordMaintenance")
+    @SerializedName("")
     @ColumnInfo(name = "passwordMaintenance")
     private String passwordMaintenance; //	6	ASC	Maintenance P
     @SerializedName("passwordMerchant")// assword
@@ -109,18 +109,6 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("EnablePasswordManual")
     @ColumnInfo(name = "EnablePasswordManual")
     private boolean EnablePasswordManual; //	1	BOOL
-    @SerializedName("EnablePasswordSalePromo")
-    @ColumnInfo(name = "EnablePasswordSalePromo")
-    private boolean EnablePasswordSalePromo; //	1	BOOL
-    @SerializedName("EnablePasswordInstallment")
-    @ColumnInfo(name = "EnablePasswordInstallment")
-    private boolean EnablePasswordInstallment; //	1	BOOL
-    @SerializedName("EnablePasswordHotel")
-    @ColumnInfo(name = "EnablePasswordHotel")
-    private boolean EnablePasswordHotel; //	1	BOOL
-    @SerializedName("EnablePasswordRefundQr")
-    @ColumnInfo(name = "EnablePasswordRefundQr")
-    private boolean EnablePasswordRefundQr; //	1	BOOL
     @SerializedName("CountryCode")
     @ColumnInfo(name = "CountryCode")
     private String CountryCode; //	2	BCD
@@ -166,12 +154,6 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("installmentMinAmount")
     @ColumnInfo(name = "installmentMinAmount")
     private String installmentMinAmount;//	6	BCD
-    @SerializedName("SalaryCashOutFeePercentage1")
-    @ColumnInfo(name = "SalaryCashOutFeePercentage1")
-    private String SalaryCashOutFeePercentage1;//	1	BCD
-    @SerializedName("SalaryCashOutFeePercentage2")
-    @ColumnInfo(name = "SalaryCashOutFeePercentage2")
-    private String SalaryCashOutFeePercentage2;//	1	BCD
     @SerializedName("EnablePreAuthCompletion")
     @ColumnInfo(name = "EnablePreAuthCompletion")
     private boolean EnablePreAuthCompletion;
@@ -220,91 +202,19 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("maxTipPercentage")
     @ColumnInfo(name = "maxTipPercentage")
     private String maxTipPercentage;//	1	BCD
-    @SerializedName("enableMobileWallet")
-    @ColumnInfo(name = "enableMobileWallet")
-    private boolean enableMobileWallet;//	1	BOOL
-    @SerializedName("enableMobileCashIn")
-    @ColumnInfo(name = "enableMobileCashIn")
-    private boolean enableMobileCashIn;//	1	BOOL
-    @SerializedName("enableMobileCashOut")
-    @ColumnInfo(name = "enableMobileCashOut")
-    private boolean enableMobileCashOut;//	1	BOOL
-    @SerializedName("enableMobileCashSale")
-    @ColumnInfo(name = "enableMobileCashSale")
-    private boolean enableMobileCashSale;//	1	BOOL
-    @SerializedName("enableWalletCashInPassword")
-    @ColumnInfo(name = "enableWalletCashInPassword")
-    private boolean enableWalletCashInPassword;//	1	BOOL
-    @SerializedName("enableWalletCashOutPassword")
-    @ColumnInfo(name = "enableWalletCashOutPassword")
-    private boolean enableWalletCashOutPassword;//	1	BOOL
-    @SerializedName("enableWalletSalePassword")
-    @ColumnInfo(name = "enableWalletSalePassword")
-    private boolean enableWalletSalePassword;//	1
-    @SerializedName("mobileWalletPassword")// BOOL
-    @ColumnInfo(name = "mobileWalletPassword")
-    private String mobileWalletPassword;//	2
-    @SerializedName("mobilePhonePrefix")// BCD
-    @ColumnInfo(name = "mobilePhonePrefix")
-    private String mobilePhonePrefix;//	6	ASC
-    @SerializedName("mobilePhoneMinLen")
-    @ColumnInfo(name = "mobilePhoneMinLen")
-    private String mobilePhoneMinLen;//	1	BCD
-    @SerializedName("mobilePhoneMaxLen")
-    @ColumnInfo(name = "mobilePhoneMaxLen")
-    private String mobilePhoneMaxLen;//	1	BCD
+
     @SerializedName("enableApexEcr")
     @ColumnInfo(name = "enableApexEcr")
     private boolean enableApexEcr;//	1	BOOL
     @SerializedName("blockWifi")
     @ColumnInfo(name = "blockWifi")
     private boolean blockWifi;//	1	BOO
-    @SerializedName("apnWhiteList")// L
-    @ColumnInfo(name = "apnWhiteList")
-    private String apnWhiteList;//	40	ASC
-    @SerializedName("qrMpayFeeAmount")
-    @ColumnInfo(name = "qrMpayFeeAmount")
-    private String qrMpayFeeAmount;//	6	BCD
-    @SerializedName("qrMpayFeePercentage1")
-    @ColumnInfo(name = "qrMpayFeePercentage1")
-    private String qrMpayFeePercentage1;//	1	BCD
-    @SerializedName("qrMpayFeePercentage2")
-    @ColumnInfo(name = "qrMpayFeePercentage2")
-    private String qrMpayFeePercentage2;//	2
-    @SerializedName("qrMpayMaxAmount")// BCD
-    @ColumnInfo(name = "qrMpayMaxAmount")
-    private String qrMpayMaxAmount;//	6	BCD
-    @SerializedName("ecrComPortConfig")
-    @ColumnInfo(name = "ecrComPortConfig")
-    private String ecrComPortConfig;//	30	ASC
-    @SerializedName("enableEcrUsb")
-    @ColumnInfo(name = "enableEcrUsb")
-    private boolean enableEcrUsb;//	1	BOOL
-    @SerializedName("enableEcrOnly")
-    @ColumnInfo(name = "enableEcrOnly")
-    private boolean enableEcrOnly;//	1	BOOL
-    @SerializedName("enablePosPrintReceiptEcr")
-    @ColumnInfo(name = "enablePosPrintReceiptEcr")
-    private boolean enablePosPrintReceiptEcr;//	1	BOOL
-    @SerializedName("enableEcrRs232")
-    @ColumnInfo(name = "enableEcrRs232")
-    private boolean enableEcrRs232;//	1	BOOL
-    @SerializedName("enableMceProcessing")
-    @ColumnInfo(name = "enableMceProcessing")
-    private boolean enableMceProcessing;//	1	BOOL
-
     @SerializedName("screenSaverTimeout")
     @ColumnInfo(name = "screenSaverTimeout")
     private int screenSaverTimeout;//	2	BCD (AH - check conversion to integer)
     @SerializedName("screenSaverImageInterval")
     @ColumnInfo(name = "screenSaverImageInterval")
     private String screenSaverImageInterval;//	2
-    @SerializedName("terminalRestartTime")// BCD
-    @ColumnInfo(name = "terminalRestartTime")
-    private String terminalRestartTime;//	2	BCD
-    @SerializedName("disableTextToSpeack")
-    @ColumnInfo(name = "disableTextToSpeack")
-    private boolean disableTextToSpeack;//	1	BOOL
     @SerializedName("disableRpmHeartbeat")
     @ColumnInfo(name = "disableRpmHeartbeat")
     private boolean disableRpmHeartbeat;//	1	BOOL
@@ -350,21 +260,6 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("PasswordManual")
     @ColumnInfo(name = "PasswordManual")
     private String PasswordManual;//	2	BCD
-    @SerializedName("PasswordSaleQr")
-    @ColumnInfo(name = "PasswordSaleQr")
-    private String PasswordSaleQr;//	2	BCD
-    @SerializedName("PasswordSalePromo")
-    @ColumnInfo(name = "PasswordSalePromo")
-    private String PasswordSalePromo;//	2	BCD
-    @SerializedName("PasswordInstallment")
-    @ColumnInfo(name = "PasswordInstallment")
-    private String PasswordInstallment;//
-    @SerializedName("PasswordHotel")// 2	BCD
-    @ColumnInfo(name = "PasswordHotel")
-    private String PasswordHotel;//	2	BCD
-    @SerializedName("PasswordRefundQr")
-    @ColumnInfo(name = "PasswordRefundQr")
-    private String PasswordRefundQr;//	2	BCD
     @SerializedName("BlockSale")
     @ColumnInfo(name = "BlockSale")
     private boolean BlockSale;//	1	BOOL
@@ -404,40 +299,9 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("BlockManual")
     @ColumnInfo(name = "BlockManual")
     private boolean BlockManual;//	1	BOOL
-    @SerializedName("BlockSaleQr")
-    @ColumnInfo(name = "BlockSaleQr")
-    private boolean BlockSaleQr;//	1	BOOL
-    @SerializedName("BlockSalePromo")
-    @ColumnInfo(name = "BlockSalePromo")
-    private boolean BlockSalePromo;//	1	BOOL
-    @SerializedName("BlockInstallment")
-    @ColumnInfo(name = "BlockInstallment")
-    private boolean BlockInstallment;//	1	BOOL
-    @SerializedName("BlockHotel")
-    @ColumnInfo(name = "BlockHotel")
-    private boolean BlockHotel;//	1	BOOL
-    @SerializedName("BlockRefundQr")
-    @ColumnInfo(name = "BlockRefundQr")
-    private boolean BlockRefundQr;//	1	BOOL
-    @SerializedName("enableRpmReceipt")
-    @ColumnInfo(name = "enableRpmReceipt")
-    private boolean enableRpmReceipt;//	1	BOOL
-    //    private IdleButtons idleButtons = new IdleButtons();
     @SerializedName("voidOffline")
     @ColumnInfo(name = "voidOffline")
     private boolean voidOffline;
-    @SerializedName("enableStsPayService")
-    @ColumnInfo(name = "enableStsPayService")
-    private boolean enableStsPayService;
-    @SerializedName("enableRpm")
-    @ColumnInfo(name = "enableRpm")
-    private boolean enableRpm;
-    @SerializedName("timeIntervalStsRequests")
-    @ColumnInfo(name = "timeIntervalStsRequests")
-    private int timeIntervalStsRequests;
-    @SerializedName("enableRpmReceiptChannels")
-    @ColumnInfo(name = "enableRpmReceiptChannels")
-    private boolean enableRpmReceiptChannels;
     @SerializedName("checkCountryCode")
     @ColumnInfo(name = "checkCountryCode")
     private boolean checkCountryCode;
@@ -460,27 +324,6 @@ public class TerminalApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("enablePrintEmvInfo")
     @ColumnInfo(name = "enablePrintEmvInfo")
     private boolean enablePrintEmvInfo;
-    @SerializedName("enableRpmClockInOut")
-    @ColumnInfo(name = "enableRpmClockInOut")
-    private boolean enableRpmClockInOut;
-    @SerializedName("enableRpmHelpdeskReceipt")
-    @ColumnInfo(name = "enableRpmHelpdeskReceipt")
-    private boolean enableRpmHelpdeskReceipt;
-    @SerializedName("enableRpmWarningReceipt")
-    @ColumnInfo(name = "enableRpmWarningReceipt")
-    private boolean enableRpmWarningReceipt;
-    @SerializedName("disablePrintingSettlementReport")
-    @ColumnInfo(name = "disablePrintingSettlementReport")
-    private boolean disablePrintingSettlementReport;
-    @SerializedName("txtSettleAttempts")
-    @ColumnInfo(name = "txtSettleAttempts")
-    private int txtSettleAttempts; // (AH - check BCD to integer conversion )
-    @SerializedName("dialogTimeOutAfterFinish")
-    @ColumnInfo(name = "dialogTimeOutAfterFinish")
-    private int dialogTimeOutAfterFinish; // (AH - check bcd to int conversion)
-    @SerializedName("enableDialogAfterFinish")
-    @ColumnInfo(name = "enableDialogAfterFinish")
-    private boolean enableDialogAfterFinish;
 
     @SerializedName("record_id")
     @ColumnInfo(name = "record_id")
