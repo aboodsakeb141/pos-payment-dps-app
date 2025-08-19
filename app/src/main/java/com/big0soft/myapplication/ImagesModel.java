@@ -34,6 +34,7 @@ import java.util.List;
                 onDelete = ForeignKey.CASCADE
         ),
         indices = {@Index("terminal_id")})
+//Terminal1.Images1
 public class ImagesModel implements TmsTagInfo, Serializable, TmsRecordValidation, MappingIdleImage , Mapping2TagValue {
     private static final long serialVersionUID = 6529685098367767690L;
     @SerializedName("Terminal1.record_id")

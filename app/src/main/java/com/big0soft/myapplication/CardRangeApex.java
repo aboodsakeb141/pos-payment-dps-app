@@ -38,6 +38,7 @@ import java.util.List;
                 )},
         indices = {@Index("issuer_id"), @Index("acquirer_id"),@Index("terminal_id")}
 )
+//Terminal1.Acquirer1.Issuer2.BinList1.BinRange1
 public class CardRangeApex implements Serializable, TmsTagInfo, TmsRecordValidation, Mapping2TagValue {
     private static final long serialVersionUID = 6529675098267767690L;
     @ColumnInfo(name = "issuer_id")
@@ -58,9 +59,6 @@ public class CardRangeApex implements Serializable, TmsTagInfo, TmsRecordValidat
     @SerializedName("CurrencyCode")
     @ColumnInfo(name = "CurrencyCode")
     private String currencyCode;
-    @SerializedName("EnableLocalBin")
-    @ColumnInfo(name = "EnableLocalBin")
-    private boolean enableLocalBin;
     @SerializedName("record_id")
     @ColumnInfo(name = "record_id")
     @PrimaryKey

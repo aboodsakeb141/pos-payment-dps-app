@@ -30,6 +30,7 @@ import java.util.List;
                 onDelete = ForeignKey.CASCADE
         ),
         indices = {@Index("terminal_id")})
+//Terminal1.CapkList1.Capk1
 public class CapkListApex implements Serializable, TmsTagInfo, MappableToCapkEntity, TmsRecordValidation, Mapping2TagValue {
     private static final long serialVersionUID = -4582340239647312421L;
     @SerializedName("Terminal1.record_id")

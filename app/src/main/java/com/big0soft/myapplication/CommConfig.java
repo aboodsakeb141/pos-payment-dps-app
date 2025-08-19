@@ -32,54 +32,14 @@ import java.util.List;
         )},
         indices = {@Index("acquirer_id"),@Index("terminal_id")}
 )
+//Terminal1.Acquirer1.CommConfig1
 public class CommConfig implements TmsTagInfo, Serializable, TmsRecordValidation, Mapping2TagValue {
 
     private static final long serialVersionUID = 2669293150219020249L;
     @SerializedName("Terminal1.record_id")
     @ColumnInfo(name = "terminal_id")
     private String terminalId;
-    @SerializedName("InstallmentNii")
-    @ColumnInfo(name = "InstallmentNii")
-    private String installmentNii;
-    @SerializedName("InstallmentRecvTo")
-    @ColumnInfo(name = "InstallmentRecvTo")
-    private String installmentRecvTo;
-    @SerializedName("InstallmentSendTo")
-    @ColumnInfo(name = "InstallmentSendTo")
-    private String installmentSendTo;
-    @SerializedName("CliqUrl")
-    @ColumnInfo(name = "CliqUrl")
-    private String cliqUrl;
-    @SerializedName("DccConnTo")
-    @ColumnInfo(name = "DccConnTo")
-    private String dccConnTo;
-    @SerializedName("DccEnableSSL")
-    @ColumnInfo(name = "DccEnableSSL")
-    private String dccEnableSSL;
-    @SerializedName("DccEnableSSLServerAuth")
-    @ColumnInfo(name = "DccEnableSSLServerAuth")
-    private String dccEnableSSLServerAuth;
-    @SerializedName("DccHeaderLength")
-    @ColumnInfo(name = "DccHeaderLength")
-    private String dccHeaderLength;
-    @SerializedName("DccHeaderTPDU")
-    @ColumnInfo(name = "DccHeaderTPDU")
-    private String dccHeaderTPDU;
-    @SerializedName("DccIpAdd")
-    @ColumnInfo(name = "DccIpAdd")
-    private String dccIpAdd;
-    @SerializedName("DccNii")
-    @ColumnInfo(name = "DccNii")
-    private String dccNii;
-    @SerializedName("DccRecvTo")
-    @ColumnInfo(name = "DccRecvTo")
-    private String dccRecvTo;
-    @SerializedName("DccSendTo")
-    @ColumnInfo(name = "DccSendTo")
-    private String dccSendTo;
-    @SerializedName("DccTcpPort")
-    @ColumnInfo(name = "DccTcpPort")
-    private String dccTcpPort;
+
     @SerializedName("HostConnTo")
     @ColumnInfo(name = "HostConnTo")
     private String hostConnTo;
@@ -107,60 +67,9 @@ public class CommConfig implements TmsTagInfo, Serializable, TmsRecordValidation
     @SerializedName("HostSendTo")
     @ColumnInfo(name = "HostSendTo")
     private String hostSendTo;
-    @SerializedName("HostTcpPort")
+    @SerializedName("\"HostTcpPort\".")
     @ColumnInfo(name = "HostTcpPort")
     private String hostTcpPort;
-    @SerializedName("InstallmentConnTo")
-    @ColumnInfo(name = "InstallmentConnTo")
-    private String installmentConnTo;
-    @SerializedName("InstallmentEnableSSL")
-    @ColumnInfo(name = "InstallmentEnableSSL")
-    private String installmentEnableSSL;
-    @SerializedName("InstallmentEnableSSLServerAuth")
-    @ColumnInfo(name = "InstallmentEnableSSLServerAuth")
-    private String installmentEnableSSLServerAuth;
-    @SerializedName("InstallmentHeaderLength")
-    @ColumnInfo(name = "InstallmentHeaderLength")
-    private String installmentHeaderLength;
-    @SerializedName("InstallmentHeaderTPDU")
-    @ColumnInfo(name = "InstallmentHeaderTPDU")
-    private String installmentHeaderTPDU;
-    @SerializedName("InstallmentIpAdd")
-    @ColumnInfo(name = "InstallmentIpAdd")
-    private String installmentIpAdd;
-    @SerializedName("InstallmentTcpPort")
-    @ColumnInfo(name = "InstallmentTcpPort")
-    private String installmentTcpPort;
-    @SerializedName("LoyaltyConnTo")
-    @ColumnInfo(name = "LoyaltyConnTo")
-    private String loyaltyConnTo;
-    @SerializedName("LoyaltyEnableSSL")
-    @ColumnInfo(name = "LoyaltyEnableSSL")
-    private String loyaltyEnableSSL;
-    @SerializedName("LoyaltyEnableSSLServerAuth")
-    @ColumnInfo(name = "LoyaltyEnableSSLServerAuth")
-    private String loyaltyEnableSSLServerAuth;
-    @SerializedName("LoyaltyHeaderLength")
-    @ColumnInfo(name = "LoyaltyHeaderLength")
-    private String loyaltyHeaderLength;
-    @SerializedName("LoyaltyHeaderTPDU")
-    @ColumnInfo(name = "LoyaltyHeaderTPDU")
-    private String loyaltyHeaderTPDU;
-    @SerializedName("LoyaltyIpAdd")
-    @ColumnInfo(name = "LoyaltyIpAdd")
-    private String loyaltyIpAdd;
-    @SerializedName("LoyaltyNii")
-    @ColumnInfo(name = "LoyaltyNii")
-    private String loyaltyNii;
-    @SerializedName("LoyaltyRecvTo")
-    @ColumnInfo(name = "LoyaltyRecvTo")
-    private String loyaltyRecvTo;
-    @SerializedName("LoyaltySendTo")
-    @ColumnInfo(name = "LoyaltySendTo")
-    private String loyaltySendTo;
-    @SerializedName("LoyaltyTcpPort")
-    @ColumnInfo(name = "LoyaltyTcpPort")
-    private String loyaltyTcpPort;
     @SerializedName("record_id")
     @ColumnInfo(name = "record_id")
     @PrimaryKey
@@ -169,186 +78,6 @@ public class CommConfig implements TmsTagInfo, Serializable, TmsRecordValidation
     @SerializedName("record_name")
     @ColumnInfo(name = "record_name")
     private String recordName;
-    @SerializedName("RpmConnTo")
-    @ColumnInfo(name = "RpmConnTo")
-    private String rpmConnTo;
-    @SerializedName("RpmEnableSSL")
-    @ColumnInfo(name = "RpmEnableSSL")
-    private String rpmEnableSSL;
-    @SerializedName("RpmEnableSSLServerAuth")
-    @ColumnInfo(name = "RpmEnableSSLServerAuth")
-    private String rpmEnableSSLServerAuth;
-    @SerializedName("RpmHeaderLength")
-    @ColumnInfo(name = "RpmHeaderLength")
-    private String rpmHeaderLength;
-    @SerializedName("RpmHeaderTPDU")
-    @ColumnInfo(name = "RpmHeaderTPDU")
-    private String rpmHeaderTPDU;
-    @SerializedName("RpmIpAdd")
-    @ColumnInfo(name = "RpmIpAdd")
-    private String rpmIpAdd;
-    @SerializedName("RpmNii")
-    @ColumnInfo(name = "RpmNii")
-    private String rpmNii;
-    @SerializedName("RpmRecvTo")
-    @ColumnInfo(name = "RpmRecvTo")
-    private String rpmRecvTo;
-    @SerializedName("RpmSendTo")
-    @ColumnInfo(name = "RpmSendTo")
-    private String rpmSendTo;
-    @SerializedName("RpmTcpPort")
-    @ColumnInfo(name = "RpmTcpPort")
-    private String rpmTcpPort;
-    @SerializedName("secDccConnTo")
-    @ColumnInfo(name = "secDccConnTo")
-    private String secDccConnTo;
-    @SerializedName("secDccEnableSSL")
-    @ColumnInfo(name = "secDccEnableSSL")
-    private String secDccEnableSSL;
-    @SerializedName("secDccEnableSSLServerAuth")
-    @ColumnInfo(name = "secDccEnableSSLServerAuth")
-    private String secDccEnableSSLServerAuth;
-    @SerializedName("secDccHeaderLength")
-    @ColumnInfo(name = "secDccHeaderLength")
-    private String secDccHeaderLength;
-    @SerializedName("secDccHeaderTPDU")
-    @ColumnInfo(name = "secDccHeaderTPDU")
-    private String secDccHeaderTPDU;
-    @SerializedName("secDccIpAdd")
-    @ColumnInfo(name = "secDccIpAdd")
-    private String secDccIpAdd;
-    @SerializedName("secDccNii")
-    @ColumnInfo(name = "secDccNii")
-    private String secDccNii;
-    @SerializedName("secDccRecvTo")
-    @ColumnInfo(name = "secDccRecvTo")
-    private String secDccRecvTo;
-    @SerializedName("secDccSendTo")
-    @ColumnInfo(name = "secDccSendTo")
-    private String secDccSendTo;
-    @SerializedName("secDccTcpPort")
-    @ColumnInfo(name = "secDccTcpPort")
-    private String secDccTcpPort;
-    @SerializedName("secHostConnTo")
-    @ColumnInfo(name = "secHostConnTo")
-    private String secHostConnTo;
-    @SerializedName("secHostEnableSSL")
-    @ColumnInfo(name = "secHostEnableSSL")
-    private String secHostEnableSSL;
-    @SerializedName("secHostEnableSSLServerAuth")
-    @ColumnInfo(name = "secHostEnableSSLServerAuth")
-    private String secHostEnableSSLServerAuth;
-    @SerializedName("secHostHeaderLength")
-    @ColumnInfo(name = "secHostHeaderLength")
-    private String secHostHeaderLength;
-    @SerializedName("secHostHeaderTPDU")
-    @ColumnInfo(name = "secHostHeaderTPDU")
-    private String secHostHeaderTPDU;
-    @SerializedName("secHostIpAdd")
-    @ColumnInfo(name = "secHostIpAdd")
-    private String secHostIpAdd;
-    @SerializedName("secHostNii")
-    @ColumnInfo(name = "secHostNii")
-    private String secHostNii;
-    @SerializedName("secHostRecvTo")
-    @ColumnInfo(name = "secHostRecvTo")
-    private String secHostRecvTo;
-    @SerializedName("secHostSendTo")
-    @ColumnInfo(name = "secHostSendTo")
-    private String secHostSendTo;
-    @SerializedName("secHostTcpPort")
-    @ColumnInfo(name = "secHostTcpPort")
-    private String secHostTcpPort;
-    @SerializedName("secInstallmentConnTo")
-    @ColumnInfo(name = "secInstallmentConnTo")
-    private String secInstallmentConnTo;
-    @SerializedName("secInstallmentEnableSSL")
-    @ColumnInfo(name = "secInstallmentEnableSSL")
-    private String secInstallmentEnableSSL;
-    @SerializedName("secInstallmentEnableSSLServerAuth")
-    @ColumnInfo(name = "secInstallmentEnableSSLServerAuth")
-    private String secInstallmentEnableSSLServerAuth;
-    @SerializedName("secInstallmentHeaderLength")
-    @ColumnInfo(name = "secInstallmentHeaderLength")
-    private String secInstallmentHeaderLength;
-    @SerializedName("secInstallmentHeaderTPDU")
-    @ColumnInfo(name = "secInstallmentHeaderTPDU")
-    private String secInstallmentHeaderTPDU;
-    @SerializedName("secInstallmentIpAdd")
-    @ColumnInfo(name = "secInstallmentIpAdd")
-    private String secInstallmentIpAdd;
-    @SerializedName("secInstallmentNii")
-    @ColumnInfo(name = "secInstallmentNii")
-    private String secInstallmentNii;
-    @SerializedName("secInstallmentRecvTo")
-    @ColumnInfo(name = "secInstallmentRecvTo")
-    private String secInstallmentRecvTo;
-    @SerializedName("secInstallmentSendTo")
-    @ColumnInfo(name = "secInstallmentSendTo")
-    private String secInstallmentSendTo;
-    @SerializedName("secInstallmentTcpPort")
-    @ColumnInfo(name = "secInstallmentTcpPort")
-    private String secInstallmentTcpPort;
-    @SerializedName("secLoyaltyConnTo")
-    @ColumnInfo(name = "secLoyaltyConnTo")
-    private String secLoyaltyConnTo;
-    @SerializedName("secLoyaltyEnableSSL")
-    @ColumnInfo(name = "secLoyaltyEnableSSL")
-    private String secLoyaltyEnableSSL;
-    @SerializedName("secLoyaltyEnableSSLServerAuth")
-    @ColumnInfo(name = "secLoyaltyEnableSSLServerAuth")
-    private String secLoyaltyEnableSSLServerAuth;
-    @SerializedName("secLoyaltyHeaderLength")
-    @ColumnInfo(name = "secLoyaltyHeaderLength")
-    private String secLoyaltyHeaderLength;
-    @SerializedName("secLoyaltyHeaderTPDU")
-    @ColumnInfo(name = "secLoyaltyHeaderTPDU")
-    private String secLoyaltyHeaderTPDU;
-    @SerializedName("secLoyaltyIpAdd")
-    @ColumnInfo(name = "secLoyaltyIpAdd")
-    private String secLoyaltyIpAdd;
-    @SerializedName("secLoyaltyNii")
-    @ColumnInfo(name = "secLoyaltyNii")
-    private String secLoyaltyNii;
-    @SerializedName("secLoyaltyRecvTo")
-    @ColumnInfo(name = "secLoyaltyRecvTo")
-    private String secLoyaltyRecvTo;
-    @SerializedName("secLoyaltySendTo")
-    @ColumnInfo(name = "secLoyaltySendTo")
-    private String secLoyaltySendTo;
-    @SerializedName("secLoyaltyTcpPort")
-    @ColumnInfo(name = "secLoyaltyTcpPort")
-    private String secLoyaltyTcpPort;
-    @SerializedName("secRpmConnTo")
-    @ColumnInfo(name = "secRpmConnTo")
-    private String secRpmConnTo;
-    @SerializedName("secRpmEnableSSL")
-    @ColumnInfo(name = "secRpmEnableSSL")
-    private String secRpmEnableSSL;
-    @SerializedName("secRpmEnableSSLServerAuth")
-    @ColumnInfo(name = "secRpmEnableSSLServerAuth")
-    private String secRpmEnableSSLServerAuth;
-    @SerializedName("secRpmHeaderLength")
-    @ColumnInfo(name = "secRpmHeaderLength")
-    private String secRpmHeaderLength;
-    @SerializedName("secRpmHeaderTPDU")
-    @ColumnInfo(name = "secRpmHeaderTPDU")
-    private String secRpmHeaderTPDU;
-    @SerializedName("secRpmIpAdd")
-    @ColumnInfo(name = "secRpmIpAdd")
-    private String secRpmIpAdd;
-    @SerializedName("secRpmNii")
-    @ColumnInfo(name = "secRpmNii")
-    private String secRpmNii;
-    @SerializedName("secRpmRecvTo")
-    @ColumnInfo(name = "secRpmRecvTo")
-    private String secRpmRecvTo;
-    @SerializedName("secRpmSendTo")
-    @ColumnInfo(name = "secRpmSendTo")
-    private String secRpmSendTo;
-    @SerializedName("secRpmTcpPort")
-    @ColumnInfo(name = "secRpmTcpPort")
-    private String secRpmTcpPort;
     @SerializedName("txtId")
     @ColumnInfo(name = "txtId")
     private String txtId;

@@ -34,6 +34,7 @@ import java.util.List;
         ),
         indices = {@Index("terminal_id")}
 )
+//.Acquirer1Terminal1
 public class AcquirerApex implements Serializable, TmsTagInfo, TmsRecordValidation, Mapping2TagValue {
     private static final long serialVersionUID = 6529685098267767690L;
     private String acquirerTag;
@@ -58,12 +59,6 @@ public class AcquirerApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("AcqTID")
     @ColumnInfo(name = "AcqTID")
     private String acqTID;
-    @SerializedName("cashOutAcquirer")
-    @ColumnInfo(name = "cashOutAcquirer")
-    private boolean cashOutAcquirer;
-    @SerializedName("cliqAcquirer")
-    @ColumnInfo(name = "cliqAcquirer")
-    private boolean cliqAcquirer;
     @SerializedName("enableDoubleLengthPinKey")
     @ColumnInfo(name = "enableDoubleLengthPinKey")
     private boolean enableDoubleLengthPinKey;
@@ -76,24 +71,12 @@ public class AcquirerApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @SerializedName("enableHoldAdvice")
     @ColumnInfo(name = "enableHoldAdvice")
     private boolean enableHoldAdvice;
-    @SerializedName("enableInstallment")
-    @ColumnInfo(name = "enableInstallment")
-    private boolean enableInstallment;
-    @SerializedName("enablePinBypass")
-    @ColumnInfo(name = "enablePinBypass")
-    private boolean enablePinBypass;
     @SerializedName("enableSendBatchNum")
     @ColumnInfo(name = "enableSendBatchNum")
     private boolean enableSendBatchNum;
     @SerializedName("enableSendCurrencyCode")
     @ColumnInfo(name = "enableSendCurrencyCode")
     private boolean enableSendCurrencyCode;
-    @SerializedName("enableSendInstallmentInquiry")
-    @ColumnInfo(name = "enableSendInstallmentInquiry")
-    private boolean enableSendInstallmentInquiry;
-    @SerializedName("forceInstallmentOffer")
-    @ColumnInfo(name = "forceInstallmentOffer")
-    private boolean forceInstallmentOffer;
     @SerializedName("hexCurrencyCode")
     @ColumnInfo(name = "hexCurrencyCode")
     private boolean hexCurrencyCode;
@@ -105,24 +88,15 @@ public class AcquirerApex implements Serializable, TmsTagInfo, TmsRecordValidati
     @ColumnInfo(name = "record_name")
     @NonNull
     private String recordName;
-    @SerializedName("rpmAcquirer")
-    @ColumnInfo(name = "rpmAcquirer")
-    private boolean rpmAcquirer;
     @SerializedName("sendSerialNumber")
     @ColumnInfo(name = "sendSerialNumber")
     private boolean sendSerialNumber;
-    @SerializedName("txtCurrentBatchNum")
-    @ColumnInfo(name = "txtCurrentBatchNum")
-    private String txtCurrentBatchNum;
     @SerializedName("txtId")
     @ColumnInfo(name = "txtId")
     private String txtId;
     @SerializedName("txtMerchCC")
     @ColumnInfo(name = "txtMerchCC")
     private String txtMerchCC;
-    @SerializedName("txtNextBatchNum")
-    @ColumnInfo(name = "txtNextBatchNum")
-    private String txtNextBatchNum;
     @SerializedName("txtSettleAttempts")
     @ColumnInfo(name = "txtSettleAttempts")
     private String txtSettleAttempts;

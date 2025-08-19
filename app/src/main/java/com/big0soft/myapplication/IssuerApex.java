@@ -28,6 +28,8 @@ import java.util.List;
         )},
         indices = {@Index("terminal_id")}
 )
+//Terminal1.Acquirer1.Issuer1
+
 public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation , Mapping2TagValue {
     private static final long serialVersionUID = 6539685098267767690L;
     @SerializedName("Terminal1.record_id")

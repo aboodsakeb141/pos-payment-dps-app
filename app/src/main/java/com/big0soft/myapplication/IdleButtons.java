@@ -31,39 +31,12 @@ import java.util.List;
                 onDelete = ForeignKey.CASCADE
         ),
         indices = {@Index("terminal_id")})
+//Terminal1.IdleButtons1
 public class IdleButtons implements TmsTagInfo, Serializable, TmsRecordValidation, Mapping2TagValue {
     private static final long serialVersionUID = 2669293150219020349L;
     @SerializedName("Terminal1.record_id")
     @ColumnInfo(name = "terminal_id")
     private String terminalId;
-    @SerializedName("btnAmount1")
-    @ColumnInfo(name = "btnAmount1")
-    private String btnAmount1;
-    @SerializedName("btnAmount2")
-    @ColumnInfo(name = "btnAmount2")
-    private String btnAmount2;
-    @SerializedName("btnAmount3")
-    @ColumnInfo(name = "btnAmount3")
-    private String btnAmount3;
-    @SerializedName("btnAmount4")
-    @ColumnInfo(name = "btnAmount4")
-    private String btnAmount4;
-    @SerializedName("btnAmount5")
-    @ColumnInfo(name = "btnAmount5")
-    private String btnAmount5;
-    @SerializedName("btnAmount6")
-    @ColumnInfo(name = "btnAmount6")
-    private String btnAmount6;
-    @SerializedName("btnAmount7")
-    @ColumnInfo(name = "btnAmount7")
-    private String btnAmount7;
-    @SerializedName("btnAmount8")
-    @ColumnInfo(name = "btnAmount8")
-    private String btnAmount8;
-    @SerializedName("btnAmount9")
-    @ColumnInfo(name = "btnAmount9")
-    private String btnAmount9;
-
     @SerializedName("btnArText1")
     @ColumnInfo(name = "btnArText1")
     @TLVOptions(paddingLength = 15)
@@ -88,18 +61,6 @@ public class IdleButtons implements TmsTagInfo, Serializable, TmsRecordValidatio
     @ColumnInfo(name = "btnArText6")
     @TLVOptions(paddingLength = 15)
     private String btnArText6;
-    @SerializedName("btnArText7")
-    @ColumnInfo(name = "btnArText7")
-    @TLVOptions(paddingLength = 15)
-    private String btnArText7;
-    @SerializedName("btnArText8")
-    @ColumnInfo(name = "btnArText8")
-    @TLVOptions(paddingLength = 15)
-    private String btnArText8;
-    @SerializedName("btnArText9")
-    @ColumnInfo(name = "btnArText9")
-    @TLVOptions(paddingLength = 15)
-    private String btnArText9;
     @TLVOptions(paddingLength = 15)
 
     @SerializedName("btnEnText1")
@@ -125,18 +86,6 @@ public class IdleButtons implements TmsTagInfo, Serializable, TmsRecordValidatio
     @ColumnInfo(name = "btnEnText6")
     @TLVOptions(paddingLength = 15)
     private String btnEnText6;
-    @SerializedName("btnEnText7")
-    @ColumnInfo(name = "btnEnText7")
-    @TLVOptions(paddingLength = 15)
-    private String btnEnText7;
-    @SerializedName("btnEnText8")
-    @ColumnInfo(name = "btnEnText8")
-    @TLVOptions(paddingLength = 15)
-    private String btnEnText8;
-    @SerializedName("btnEnText9")
-    @ColumnInfo(name = "btnEnText9")
-    @TLVOptions(paddingLength = 15)
-    private String btnEnText9;
 
     @SerializedName("btnIcon1")
     @TLVOptions(paddingLength = 15)
@@ -163,18 +112,6 @@ public class IdleButtons implements TmsTagInfo, Serializable, TmsRecordValidatio
     @ColumnInfo(name = "btnIcon6")
     private String btnIcon6;
     @TLVOptions(paddingLength = 15)
-    @SerializedName("btnIcon7")
-    @ColumnInfo(name = "btnIcon7")
-    private String btnIcon7;
-    @TLVOptions(paddingLength = 15)
-    @SerializedName("btnIcon8")
-    @ColumnInfo(name = "btnIcon8")
-    private String btnIcon8;
-    @TLVOptions(paddingLength = 15)
-    @SerializedName("btnIcon9")
-    @ColumnInfo(name = "btnIcon9")
-    private String btnIcon9;
-    @TLVOptions(paddingLength = 15)
 
     @SerializedName("btnId1")
     @ColumnInfo(name = "btnId1")
@@ -200,51 +137,7 @@ public class IdleButtons implements TmsTagInfo, Serializable, TmsRecordValidatio
     @ColumnInfo(name = "btnId6")
     private String btnId6;
     @TLVOptions(paddingLength = 15)
-    @SerializedName("btnId7")
-    @ColumnInfo(name = "btnId7")
-    private String btnId7;
-    @TLVOptions(paddingLength = 15)
-    @SerializedName("btnId8")
-    @ColumnInfo(name = "btnId8")
-    private String btnId8;
-    @TLVOptions(paddingLength = 15)
-    @SerializedName("btnId9")
-    @ColumnInfo(name = "btnId9")
-    private String btnId9;
-    @TLVOptions(paddingLength = 15)
-    @SerializedName("DonationTitleImage")
-    @ColumnInfo(name = "DonationTitleImage")
-    private String DonationTitleImage;
-    @SerializedName("enableDonationHomeScreen")
-    @ColumnInfo(name = "enableDonationHomeScreen")
-    private boolean enableDonationHomeScreen;
-    @SerializedName("packageName1")
-    @ColumnInfo(name = "packageName1")
-    private String packageName1;
-    @SerializedName("packageName2")
-    @ColumnInfo(name = "packageName2")
-    private String packageName2;
-    @SerializedName("packageName3")
-    @ColumnInfo(name = "packageName3")
-    private String packageName3;
-    @SerializedName("packageName4")
-    @ColumnInfo(name = "packageName4")
-    private String packageName4;
-    @SerializedName("packageName5")
-    @ColumnInfo(name = "packageName5")
-    private String packageName5;
-    @SerializedName("packageName6")
-    @ColumnInfo(name = "packageName6")
-    private String packageName6;
-    @SerializedName("packageName7")
-    @ColumnInfo(name = "packageName7")
-    private String packageName7;
-    @SerializedName("packageName8")
-    @ColumnInfo(name = "packageName8")
-    private String packageName8;
-    @SerializedName("packageName9")
-    @ColumnInfo(name = "packageName9")
-    private String packageName9;
+
     @SerializedName("record_id")
     @ColumnInfo(name = "record_id")
     @PrimaryKey

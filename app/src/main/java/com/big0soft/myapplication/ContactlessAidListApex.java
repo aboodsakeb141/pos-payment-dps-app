@@ -31,30 +31,13 @@ import java.util.List;
                 onDelete = ForeignKey.CASCADE
         ),
         indices = {@Index("terminal_id")})
+//Terminal1.AidCtlsList1.AidCtls1
 public class ContactlessAidListApex implements Serializable, TmsTagInfo, MappableToAidEntity, TmsRecordValidation , Mapping2TagValue {
     private static final long serialVersionUID = 6529685098267767790L;
     @SerializedName("Terminal1.record_id")
     @ColumnInfo(name = "terminal_id")
     private String terminalId;
     private String contactLessAidTag;
-    @SerializedName("AdditionalTags1")
-    @ColumnInfo(name = "AdditionalTags1")
-    private String additionalTags1;
-    @SerializedName("AdditionalTags2")
-    @ColumnInfo(name = "AdditionalTags2")
-    private String additionalTags2;
-    @SerializedName("AdditionalTags3")
-    @ColumnInfo(name = "AdditionalTags3")
-    private String additionalTags3;
-    @SerializedName("AdditionalTags4")
-    @ColumnInfo(name = "AdditionalTags4")
-    private String additionalTags4;
-    @SerializedName("AdditionalTags5")
-    @ColumnInfo(name = "AdditionalTags5")
-    private String additionalTags5;
-    @SerializedName("addTagsLen")
-    @ColumnInfo(name = "addTagsLen")
-    private String addTagsLen;
     @SerializedName("aid")
     @ColumnInfo(name = "aid")
     private String aid;
@@ -78,12 +61,6 @@ public class ContactlessAidListApex implements Serializable, TmsTagInfo, Mappabl
     @SerializedName("bCVMLimitCheck")
     @ColumnInfo(name = "bCVMLimitCheck")
     private String bCVMLimitCheck;
-    @SerializedName("bDisableDccAboveCVM")
-    @ColumnInfo(name = "bDisableDccAboveCVM")
-    private String bDisableDccAboveCVM;
-    @SerializedName("bDisableDccBelowCVM")
-    @ColumnInfo(name = "bDisableDccBelowCVM")
-    private String bDisableDccBelowCVM;
     @SerializedName("bFloorLimitCheck")
     @ColumnInfo(name = "bFloorLimitCheck")
     private String bFloorLimitCheck;
@@ -108,15 +85,6 @@ public class ContactlessAidListApex implements Serializable, TmsTagInfo, Mappabl
     @SerializedName("CVMLimit")
     @ColumnInfo(name = "CVMLimit")
     private String cvmLimit;
-    @SerializedName("dDOL1")
-    @ColumnInfo(name = "dDOL1")
-    private String dDOL1;
-    @SerializedName("dDolLen")
-    @ColumnInfo(name = "dDolLen")
-    private String dDolLen;
-    @SerializedName("EnhancedClCapbilities")
-    @ColumnInfo(name = "EnhancedClCapbilities")
-    private String enhancedClCapbilities;
     @SerializedName("FloorLimit")
     @ColumnInfo(name = "FloorLimit")
     private String floorLimit;
@@ -138,9 +106,6 @@ public class ContactlessAidListApex implements Serializable, TmsTagInfo, Mappabl
     @SerializedName("priority")
     @ColumnInfo(name = "priority")
     private String priority;
-    @SerializedName("RandomNumberScope")
-    @ColumnInfo(name = "RandomNumberScope")
-    private String randomNumberScope;
     @SerializedName("RiskManData")
     @ColumnInfo(name = "RiskManData")
     private String riskManData;
@@ -156,12 +121,6 @@ public class ContactlessAidListApex implements Serializable, TmsTagInfo, Mappabl
     @SerializedName("TACOnline")
     @ColumnInfo(name = "TACOnline")
     private String tacOnline;
-    @SerializedName("tDOL1")
-    @ColumnInfo(name = "tDOL1")
-    private String tDOL1;
-    @SerializedName("tDolLen")
-    @ColumnInfo(name = "tDolLen")
-    private String tDolLen;
     @SerializedName("TransLimit")
     @ColumnInfo(name = "TransLimit")
     private String contactlessTransLimit;

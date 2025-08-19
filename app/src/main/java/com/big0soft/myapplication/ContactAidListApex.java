@@ -32,6 +32,7 @@ import java.util.List;
                 onDelete = ForeignKey.CASCADE
         ),
         indices = {@Index("terminal_id")})
+//Terminal1.AidList1.Aid1
 public class ContactAidListApex implements Serializable, TmsTagInfo, MappableToAidEntity, TmsRecordValidation, Mapping2TagValue {
     private static final long serialVersionUID = -4582340239647312411L;
     @SerializedName("Terminal1.record_id")
@@ -52,12 +53,6 @@ public class ContactAidListApex implements Serializable, TmsTagInfo, MappableToA
     @SerializedName("dDOL")
     @ColumnInfo(name = "dDOL")
     private String dDOL;
-    @SerializedName("emvCashTxnType")
-    @ColumnInfo(name = "emvCashTxnType")
-    private String emvCashTxnType;
-    @SerializedName("enableCheckTrack2AndTag57")
-    @ColumnInfo(name = "enableCheckTrack2AndTag57")
-    private String enableCheckTrack2AndTag57;
     @SerializedName("ExactMatch")
     @ColumnInfo(name = "ExactMatch")
     private String exactMatch;
@@ -101,12 +96,6 @@ public class ContactAidListApex implements Serializable, TmsTagInfo, MappableToA
     @SerializedName("Version")
     @ColumnInfo(name = "Version")
     private String version;
-    @SerializedName("Version2")
-    @ColumnInfo(name = "Version2")
-    private String version2;
-    @SerializedName("Version3")
-    @ColumnInfo(name = "Version3")
-    private String version3;
 
     /**
      * apex doc
