@@ -56,9 +56,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @SerializedName("BlockCompletion")
     @ColumnInfo(name = "BlockCompletion")
     private boolean blockCompletion;
-    @SerializedName("BlockLoyalty")
-    @ColumnInfo(name = "BlockLoyalty")
-    private boolean blockLoyalty;
     @SerializedName("BlockManualEntry")
     @ColumnInfo(name = "BlockManualEntry")
     private boolean blockManualEntry;
@@ -82,10 +79,7 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     private boolean blockSale;
     @SerializedName("BlockVoid")
     @ColumnInfo(name = "BlockVoid")
-    private boolean blockVoid;
-    @SerializedName("CashoutMaxAmount")
-    @ColumnInfo(name = "CashoutMaxAmount")
-    private String cashoutMaxAmount;
+    private boolean blockVoid;;
     @SerializedName("CheckExpDate")
     @ColumnInfo(name = "CheckExpDate")
     private boolean checkExpDate;
@@ -141,9 +135,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @ColumnInfo(name = "DccDisclaimer9")
     @TLVOptions(paddingLength = 40)
     private String dccDisclaimer9;
-    @SerializedName("DefaultTransaction")
-    @ColumnInfo(name = "DefaultTransaction")
-    private String defaultTransaction;
     @SerializedName("EnableCheckMod10")
     @ColumnInfo(name = "EnableCheckMod10")
     private boolean enableCheckMod10;
@@ -168,18 +159,9 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @SerializedName("FloorLimit")
     @ColumnInfo(name = "FloorLimit")
     private String floorLimit;
-    @SerializedName("ForceOnlinePinBelowCtlsCvm")
-    @ColumnInfo(name = "ForceOnlinePinBelowCtlsCvm")
-    private boolean forceOnlinePinBelowCtlsCvm;
     @SerializedName("ForceSignatureForNoCvm")
     @ColumnInfo(name = "ForceSignatureForNoCvm")
     private boolean forceSignatureForNoCvm;
-    @SerializedName("GoGreenCustomerCopy")
-    @ColumnInfo(name = "GoGreenCustomerCopy")
-    private boolean goGreenCustomerCopy;
-    @SerializedName("GoGreenMerchantCopy")
-    @ColumnInfo(name = "GoGreenMerchantCopy")
-    private boolean goGreenMerchantCopy;
     @SerializedName("IccOfflineAsMag")
     @ColumnInfo(name = "IccOfflineAsMag")
     private boolean iccOfflineAsMag;
@@ -190,9 +172,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @ColumnInfo(name = "IssName")
     @TLVOptions(paddingLength = 20)
     private String issName;
-    @SerializedName("ManualMaxAmount")
-    @ColumnInfo(name = "ManualMaxAmount")
-    private String manualMaxAmount;
     @SerializedName("MaskExpiryDateBank")
     @ColumnInfo(name = "MaskExpiryDateBank")
     private boolean maskExpiryDateBank;
@@ -202,12 +181,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @SerializedName("MaskExpiryDateMerchant")
     @ColumnInfo(name = "MaskExpiryDateMerchant")
     private boolean maskExpiryDateMerchant;
-    @SerializedName("MaskMidTidCustomer")
-    @ColumnInfo(name = "MaskMidTidCustomer")
-    private boolean maskMidTidCustomer;
-    @SerializedName("MaskMidTidMerchant")
-    @ColumnInfo(name = "MaskMidTidMerchant")
-    private boolean maskMidTidMerchant;
     @SerializedName("MaskPanBank")
     @ColumnInfo(name = "MaskPanBank")
     private boolean maskPanBank;
@@ -217,9 +190,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @SerializedName("MaskPanMerchant")
     @ColumnInfo(name = "MaskPanMerchant")
     private boolean maskPanMerchant;
-    @SerializedName("MaxTxnLimit")
-    @ColumnInfo(name = "MaxTxnLimit")
-    private String maxTxnLimit;
     @SerializedName("MinTransactionAmount")
     @ColumnInfo(name = "MinTransactionAmount")
     private String minTransactionAmount;
@@ -241,9 +211,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @SerializedName("PinSale")
     @ColumnInfo(name = "PinSale")
     private boolean pinSale;
-    @SerializedName("PreAuthConditionCode")
-    @ColumnInfo(name = "PreAuthConditionCode")
-    private boolean preAuthConditionCode;
     @SerializedName("PrintBankCopy")
     @ColumnInfo(name = "PrintBankCopy")
     private boolean printBankCopy;
@@ -276,9 +243,6 @@ public class IssuerApex implements Serializable, TmsTagInfo, TmsRecordValidation
     @SerializedName("txtId")
     @ColumnInfo(name = "txtId")
     private String txtId;
-    @SerializedName("UseSpecialPanMasking")
-    @ColumnInfo(name = "UseSpecialPanMasking")
-    private boolean useSpecialPanMasking;
     @SerializedName("VoidOffline")
     @ColumnInfo(name = "VoidOffline")
     private boolean voidOffline;

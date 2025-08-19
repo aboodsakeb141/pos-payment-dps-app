@@ -71,19 +71,7 @@ public class ImagesModel implements TmsTagInfo, Serializable, TmsRecordValidatio
     private String ScreenImage4; // Base64-encoded image (empty in JSON)
     @SerializedName("ScreenImage5")
     @ColumnInfo(name = "ScreenImage5")
-    private String ScreenImage5; // Base64-encoded image (empty in JSON)
-    @SerializedName("ScreenImage6")
-    @ColumnInfo(name = "ScreenImage6")
-    private String ScreenImage6; // Base64-encoded image (empty in JSON)
-    @SerializedName("ScreenImage7")
-    @ColumnInfo(name = "ScreenImage7")
-    private String ScreenImage7; // Base64-encoded image (empty in JSON)
-    @SerializedName("ScreenImage8")
-    @ColumnInfo(name = "ScreenImage8")
-    private String ScreenImage8; // Base64-encoded image (empty in JSON)
-    @SerializedName("ScreenImage9")
-    @ColumnInfo(name = "ScreenImage9")
-    private String ScreenImage9; // Base64-encoded image (empty in JSON)
+    private String ScreenImage5; // Base64-encoded image (empty in JSON)d image (empty in JSON)image (empty in JSON)
 
 
     @NonNull
